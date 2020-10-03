@@ -76,7 +76,7 @@ passwordMatch = (input1, input2) =>{
 
 //Function to check if email is valid (using REGEX)
 checkEmail = input => {
-    const regex = /^(([^<>()\[\]\\.,;:\s@"]+(<>()\[\]\\.,;:\s@"]+)*)|[a-zA-Z\-0-9]{1,3}\.[0-9]{1-3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+[a-zA-Z]{2,}))$/;
+    const regex =  /\S+@\S+\.\S+/;
     if(regex.test(input.value.trim())){
         showSuccess(input);
     }else{
